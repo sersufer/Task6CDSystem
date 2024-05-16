@@ -19,9 +19,26 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set-up Node
+        uses: actions/setup-node@v1
+        with: 
+         node-version: 19.x
+      - name: Install Dependencies
+        run: | 
+          npm install --save-dev node-qunit-phantomjs
+          npm install --save-dev qunit
+      - name: Test
+        run: node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs test.html
+
   # Single deploy job since we're just deploying
   deploy:
     environment:
