@@ -1,5 +1,20 @@
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+// Load Google Analytics gtag.js and configure it
+(function() {
+  var gtagScript = document.createElement('script');
+  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-R7L913Q2PN';
+  gtagScript.async = true;
+  document.head.appendChild(gtagScript);
+
+  gtagScript.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-R7L913Q2PN');
+  };
+})();
 
 // Constants for the literals
 const INVALID_ROMAN = 'Please enter a valid roman';
