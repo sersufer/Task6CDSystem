@@ -1,3 +1,6 @@
+import { gtag } from 'https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID';
+
+
 // Constants for the literals
 const INVALID_ROMAN = 'Please enter a valid roman';
 const INVALID_INTEGER = 'Please enter a valid integer';
