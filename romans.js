@@ -1,4 +1,6 @@
 
+import { gtag } from "https://www.googletagmanager.com/gtag/js?id=G-R7L913Q2PN";
+
 // Constants for the literals
 const INVALID_ROMAN = 'Please enter a valid roman';
 const INVALID_INTEGER = 'Please enter a valid integer';
