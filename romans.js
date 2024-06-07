@@ -1,4 +1,4 @@
-import { gtag } from 'https://www.googletagmanager.com/gtag/js?id=G-R7L913Q2PN';
+const { gtag } = require('https://www.googletagmanager.com/gtag/js?id=G-R7L913Q2PN');
 
 
 // Constants for the literals
