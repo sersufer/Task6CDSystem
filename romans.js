@@ -1,5 +1,5 @@
-const { gtag } = require('https://www.googletagmanager.com/gtag/js?id=G-R7L913Q2PN');
-
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
 
 // Constants for the literals
 const INVALID_ROMAN = 'Please enter a valid roman';
