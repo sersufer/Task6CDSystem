@@ -15,7 +15,7 @@
 
       var convertButton = document.querySelector('.convert-button');
       var modeCheckbox = document.querySelector('input[type=\'checkbox\']');
-      convertButton.addEventListener('click', function() {
+      convertButton.addEventListener('mouseup', function() {
         
           gtag('event', modeCheckbox.checked ? 'IntToRom' : 'RomToInt', {
             'value': clicked
