@@ -10,6 +10,20 @@
 
       gtag('config', 'G-R7L913Q2PN');
     </script>
+
+    <script> 
+
+      var convertButton = document.querySelector('.convert-button');.
+      var modeCheckbox = document.querySelector('input[type=\'checkbox\']');
+      convertButton.addEventListener('click', function() {
+        
+          gtag('event', modeCheckbox.checked ? 'RomToInt' : 'IntToRom', {
+            'value': clicked
+          });
+
+      });
+
+    </script>
     
     <script src="romans.js"></script>
     <link rel="stylesheet" href="romans.css">
